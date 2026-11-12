@@ -1,0 +1,6 @@
+# Derived from imports in tests/.
+# gmssl was recorded as 3.2.x in the run report (minor version not pinned);
+# pysm4 is pinned to the interop-tested version.
+gmssl>=3.2.2,<4
+pysm4==0.7.2
+pytest==9.2.0
