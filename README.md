@@ -1,5 +1,13 @@
 # auto-crypto-vectors
 
+> **定位**：SM2/SM3/SM4 国密测试向量与行为测试集（KAT + 负向 + 互通）
+> **技能**：国密算法测试、KAT 逐字节比对、gmssl × pysm4 互通、缺陷钉死
+> **证据**：24 passed（RUN-20261110-030330：JUnit + sha256）
+> **复现**：`pip install -r requirements.txt && python -m pytest -q`
+> **边界**：仿真/学习；SM2/SM3 互通缺第二实现
+> **维护**：稳定（2026-11-10 发布，MIT）
+
+
 SM2 / SM3 / SM4 国密算法的 pytest 测试向量与行为测试集：标准 KAT 向量逐字节比对、负向/边界用例、以及 gmssl × pysm4 双实现 SM4 互通对拍。零硬件，纯 Python。
 
 > 定位声明：本项目用于**教学与仿真环境**中的密码模块测试方法练习，不针对、也不适用于任何真实车辆、真实 ECU 或任何产品。
